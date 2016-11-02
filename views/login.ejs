@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/jquery.min.js"></script>
+  </head>
+  <body>
+  	<form class="login" method="post" action="/new">
+      <input type="hidden" name="userId" value="<%= _id %>">
+
+  		<label>用户名：</label>
+  		<input type="txt" name="userName" value='<%= userName %>' ></br>
+    	
+    	<label>密码：</label>
+    	<input type="txt" name="passWord" value="<%= passWord %>"></br>
+
+    	<button >提交</button>
+  	</form>	
+  </body>
+</html>
